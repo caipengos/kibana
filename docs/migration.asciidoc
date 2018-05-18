@@ -1,10 +1,10 @@
 [[breaking-changes]]
-= Breaking changes
+= 重要变更
 
 [partintro]
 --
-This section discusses the changes that you need to be aware of when migrating
-your application from one version of Kibana to another.
+本节讨论在将应用程序从一个版本的 Kibana 迁移到另一个版本时需要注意的变化。
 --
 
 include::migration/migrate_6_0.asciidoc[]
+
