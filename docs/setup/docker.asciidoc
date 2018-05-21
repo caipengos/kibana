@@ -4,6 +4,8 @@ Kibana 的 Docker 镜像可以从 Elastic 官网上的 Docker 镜像仓库获取
 
 NOTE: https://www.elastic.co/guide/en/x-pack/current/index.html[X-Pack] 在这个 image 中是预装好的。安装了 X-Pack，Kibana 会去连接同样带有 X-Pack 的 Elasticsearch 集群。
 
+[float]
+[[pulling-docker-images]]
 === 获取镜像
 向 Elastic Docker 仓库发送一条 +docker pull+ 命令就可以获取 Kibana Docker 镜像。
 
@@ -25,10 +27,13 @@ docker pull {docker-image}
 
 endif::[]
 
-=== 配置 Docker 中的 Kibana 
+[float]
+[[configuring-kibana-docker]]
+=== 配置 Docker 中的 Kibana
 
 Docker 镜像提供了几种方法来配置 Kibana。传统的方法是给出一个 <<settings>> 中描述的配置文件 `kibana.yml` ，也可以使用环境变量来定义设置项。
 
+[float]
 [[docker-bind-mount-config]]
 ==== 绑定配置
 
@@ -43,6 +48,7 @@ services:
       - ./kibana.yml:/usr/share/kibana/config/kibana.yml
 --------------------------------------------
 
+[float]
 [[docker-env-config]]
 ==== 环境变量设置
 
@@ -111,6 +117,8 @@ services:
 
 优先使用环境变量，然后是配置文件 `kibana.yml` 中的配置项。
 
+[float]
+[[docker-defaults]]
 ==== Docker 默认值
 使用 Docker 时，下面的配置项有不同的默认值 ：
 
@@ -122,4 +130,3 @@ services:
 `xpack.monitoring.ui.container.elasticsearch.enabled`:: `true`
 
 这些配置项的默认值在 `kibana.yml` 中设置。可以通过 <<docker-bind-mount-config, 自定义 `kibana.yml`>> 或者 <<docker-env-config, 环境变量>>覆盖这些默认值。
-

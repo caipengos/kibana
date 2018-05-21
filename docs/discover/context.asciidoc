@@ -16,6 +16,8 @@ image::images/Discover-ContextView.png[Context View]
 NOTE: 默认显示的文档数量可以通过 <<advanced-options, *Management >
 Advanced Options*>> 中的 `context:defaultSize` 设置。
 
+[float]
+[[changing-context-size]]
 === 改变上下文数量
 
 可以单独改变锚文档前后的文档显示数量。
@@ -31,4 +33,3 @@ image::images/Discover-ContextView-SizePicker-Older.png[]
 {nbsp}
 
 NOTE: 每次点击按钮默认加载的文档数量能够通过 <<advanced-options, *Management > Advanced Options*>> 中的 `context:step` 配置。
-

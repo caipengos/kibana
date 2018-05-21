@@ -7,6 +7,7 @@
 
 image:images/tsvb-screenshot.png["Time Series Visual Builder Interface"]
 
+[[time-series-visualizations]]
 === 特色可视化
 
 时间序列可视化构建包含5种不同的可视化类型。您可以使用界面顶部的选项卡式选取器在每种可视化类型之间切换。
@@ -46,7 +47,7 @@ image:images/tsvb-gauge.png["Gauge Visualization"]
 
 image:images/tsvb-markdown.png["Markdown Visualization"]
 
-
+[[time-series-interface]]
 === 界面概述
 
 每个可视化的用户界面由 *Data* 标签页和 *Pannel Options* 组成。唯一例外的是时间序列和 Markdown 可视化，时间序列具有用于 Annotations 的第三个标签页，Markdown 具有用于编辑器的第三个标签页。
@@ -166,4 +167,3 @@ image:images/tsvb-annotations.png["Annotation Tab"]
 Markdown 标签页用于编辑 Markdown 可视化的源代码。用户界面左侧有一个编辑器，右侧有数据标签页中的可用变量。您可以单击变量名称将 Mustache 模板变量插入到光标位置的标记中。Mustache 语法使用 Handlebar.js 处理器，它是 Mustache 模板语言的扩展版本。
 
 image:images/tsvb-markdown-tab.png["Markdown Tab"]
-

@@ -5,10 +5,14 @@
 
 NOTE: 默认情况下，Kibana 使用 https://www.elastic.co/elastic-tile-service[Elastic Tile Service] 来显示地图瓦片（Tiles）。要使用其他 Tile 服务提供商，请在 `kibana.yml` 中设置 <<tilemap-settings,tilemap 配置项>>。
 
+[float]
+[[configuration]]
 === 配置
 
+[float]
 ==== 数据
 
+[float]
 ===== 指标
 
 坐标地图的默认 _指标_ 聚合是 *Count* 聚合。您可以选择以下任何一项聚合作为指标聚合：
@@ -22,10 +26,11 @@ NOTE: 默认情况下，Kibana 使用 https://www.elastic.co/elastic-tile-servic
 
 在 *Custom Label* 输入框中输入字符串以更改显示标签。
 
+[float]
 ===== 桶
 
 
-Tile 地图使用 {es-ref}search-aggregations-bucket-geohashgrid-aggregation.html[_geohash_] 聚合。从下拉菜单中选择一个字段，通常是坐标（coordinates）字段。  
+Tile 地图使用 {es-ref}search-aggregations-bucket-geohashgrid-aggregation.html[_geohash_] 聚合。从下拉菜单中选择一个字段，通常是坐标（coordinates）字段。
 
 - _Change precision on map zoom（更改地图缩放的精度）_ 选项框默认是选中的。取消选中该选项框以禁用此行为。
 _Precision（精度）_ 滑块决定了地图上显示的结果的粒度。有关由每个精度级别指定的区域的详细信息，请参阅 {es-ref}search-aggregations-bucket-geohashgrid-aggregation.html#_cell_dimensions_at_the_equator[geohash grid] 聚合的文档。
@@ -51,6 +56,7 @@ NOTE: 在 Elasticsearch 版本1.4.3及更高版本中，此功能要求您启用
 
 这些选项的可用性取决于您选择的聚合。
 
+[float]
 ==== 选项
 
 
@@ -81,7 +87,6 @@ NOTE: 在 Elasticsearch 版本1.4.3及更高版本中，此功能要求您启用
 
 [float]
 [[navigating-map]]
-
 === 浏览地图
 
 当您的 Tile 地图可视化准备就绪了，您可以通过几种方式浏览地图：
@@ -90,4 +95,3 @@ NOTE: 在 Elasticsearch 版本1.4.3及更高版本中，此功能要求您启用
 * 点击 *Zoom In/Out（缩小/放大）* image:images/viz-zoom.png[] 按钮手动更改缩放级别。
 * 点击 *Fit Data Bounds（适应数据边界）* image:images/viz-fit-bounds.png[] 按钮自动将地图边界裁剪为至少有一个结果的 geohash 桶。
 * 点击 *Latitude/Longitude Filter（经度/纬度过滤器）* image:images/viz-lat-long-filter.png[] 按钮，然后在地图上拖出一个边界框，为框住的坐标创建过滤器。
-
