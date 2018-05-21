@@ -19,7 +19,7 @@ Kibana 的配置很大程度上依赖于您的使用场景。如果只有自己�
 
 如果一个用户要通过 Kibana 仪表板访问某个索引库中的数据，但没有权限查看，他们会收到一个错误提示：索引不存在。X-Pack 的安全机制目前还不能提供一种方法来控制不同的用户加载不同的仪表板。
 
-关于设置 Kibana 用户和 X-Pack 信息，请参见 {xpack-ref}kibana.html.
+关于设置 Kibana 用户和 X-Pack 信息，请参见 <<using-kibana-with-security,使用 Kibana X-Pack 安全插件>>.
 
 [float]
 [[enabling-ssl]]
@@ -71,7 +71,7 @@ elasticsearch.ssl.certificateAuthorities: [ "/path/to/your/ca/cacert.pem" ]
 #
 node.master: false
 node.data: false
-node.ingest: false 
+node.ingest: false
 --------
 . 设置客户端节点接入 Elasticsearch 集群。在配置文件 `elasticsearch.yml` 中，通过 `cluster.name` 选项设定集群名字。
 +
