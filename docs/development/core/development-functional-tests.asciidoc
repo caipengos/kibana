@@ -244,7 +244,7 @@ await testSubjects.click(‘containerButton’);
 ** 高级选项： `kibanaServer.uiSettings` 或 `esArchiver`
 * remote
 ** 源码: {blob}test/functional/services/remote/remote.js[test/functional/services/remote/remote.js]
-** https://theintern.github.io/leadfoot/module-leadfoot_Command.html[Leadfoot's `Command]` 类实例
+** https://theintern.github.io/leadfoot/module-leadfoot_Command.html[Leadfoot's `Command`] 类实例
 ** 负责与浏览器的所有通信
 ** 高级选项： `testSubjects` 、 `find` 和 `PageObjects.common`
 ** 完整 API 参见 https://theintern.github.io/leadfoot/module-leadfoot_Command.html[leadfoot/Command API]
