@@ -1,7 +1,7 @@
 [[timelion-create]]
 === 创建基于时间序列的可视化控件
 
-本教程会使用来自 https://www.elastic.co/guide/en/beats/metricbeat/current/index.html[Metricbeat] 的时间序列数据为您演示 Timelion 所能提供的功能。您可以先下载 Metricbeat 并根据https://www.elastic.co/downloads/beats/metricbeat[这个说明]在本地抽取数据。
+本教程会使用来自 https://www.elastic.co/guide/en/beats/metricbeat/current/index.html[Metricbeat] 的时间序列数据为您演示 Timelion 所能提供的功能。您可以先下载 Metricbeat 并根据&#8203;https://www.elastic.co/downloads/beats/metricbeat[这个说明]在本地抽取数据。
 
 第一个可视化控件将会对比系统用户空间 CPU 实时使用百分比和其每小时的平均偏移量。为了创建这个控件，我们需要创建两个 Timelion 表达式。第一个是实时的 `system.cpu.user.pct` 平均值，第二个是每小时的平均偏移量。
 

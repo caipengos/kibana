@@ -8,7 +8,7 @@
 [float]
 ==== npm （首选方法）
 
-一旦您http://npmsearch.com[发现]想要添加的依赖，您可以像这样安装它：
+一旦您&#8203;http://npmsearch.com[发现]想要添加的依赖，您可以像这样安装它：
 
 ["source","shell"]
 -----------

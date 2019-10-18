@@ -25,7 +25,7 @@ include::color-picker.asciidoc[]
 [source,shell]
 { "script" : "doc['grade'].value * 1.2" }
 
-NOTE: 在 Elasticsearch 版本1.4.3及更高版本中，此功能要求您启用#8203;{es-ref}modules-scripting.html[动态 Groovy 脚本].
+NOTE: 在 Elasticsearch 版本1.4.3及更高版本中，此功能要求您启用&#8203;{es-ref}modules-scripting.html[动态 Groovy 脚本].
 
 这些选项的可用性取决于您选择的聚合。
 

@@ -63,7 +63,7 @@ NOTE: Kibana 不能查询脚本化字段
 
 WARNING: 脚本化字段因为实时计算数据，所以有可能非常耗费资源，并对 Kibana 的性能产生直接的影响。请记住，脚本化字段是没有内置校验的。如果脚本有问题，每当您试图去查看动态生成的数据时都会得到异常。
 
-当您在 Kibana 中定义一个脚本化字段时，您可以选择使用的脚本语言。从 5.0 版本开始，默认的选项是 {es-ref}modules-scripting-expression.html[Lucene  表达式] 和 {es-ref}modules-scripting-painless.html[Painless]。如果您在 Elasticsearch 中启用了其它动态脚本语言，也可以在 Kibana 中使用，但是不建议这样做。因为它们不能确保#8203;{es-ref}modules-scripting-security.html[沙箱安全]。
+当您在 Kibana 中定义一个脚本化字段时，您可以选择使用的脚本语言。从 5.0 版本开始，默认的选项是 {es-ref}modules-scripting-expression.html[Lucene  表达式] 和 {es-ref}modules-scripting-painless.html[Painless]。如果您在 Elasticsearch 中启用了其它动态脚本语言，也可以在 Kibana 中使用，但是不建议这样做。因为它们不能确保&#8203;{es-ref}modules-scripting-security.html[沙箱安全]。
 
 WARNING: 从 Elasticsearch 5.0 开始，不推荐使用 Groovy、 Javascript 和 Python 脚本，未来的版本中将不再支持这些脚本语言。
 
